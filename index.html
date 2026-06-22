@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Efemérides y Asuetos</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            background-color: #f1f5f9; 
+            color: #1e293b; 
+            margin: 0; 
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container { 
+            width: 100%;
+            max-width: 750px; 
+            margin: 0 auto; 
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-width;
+            background: #0f172a;
+            color: white;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0 0 6px 0; font-size: 1.8rem; font-weight: 600; }
+        header p { margin: 0; font-size: 0.95rem; color: #94a3b8; }
+        
+        .mes-card { 
+            background: white; 
+            padding: 24px; 
+            margin-bottom: 20px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.02);
+            border: 1px solid #e2e8f0;
+        }
+        .mes-titulo { 
+            font-size: 1.3rem; 
+            color: #0f172a; 
+            margin-top: 0; 
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #cbd5e1;
+            font-weight: 700;
+        }
+        .item-efemeride {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+            transition: background-color 0.2s ease;
+        }
+        .item-efemeride:last-child { border-bottom: none; }
+        .item-efemeride:hover { background-color: #fafafa; }
+        
+        .info-evento { display: flex; flex-direction: column; gap: 4px; padding-right: 10px; }
+        .dia-texto { font-weight: 600; color: #334155; font-size: 0.95rem; }
+        .descripcion { color: #475569; font-size: 0.9rem; line-height: 1.4; }
+        
+        /* Badges funcionales y profesionales */
+        .badge {
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            margin-top: 2px;
+        }
+        .nacional { background-color: #fee2e2; color: #991b1b; }
+        .estatal { background-color: #e0f2fe; color: #0369a1; }
+        .regular { background-color: #f1f5f9; color: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 Calendario de Efemérides e Identidad</h1>
+            <p>Registro Oficial de Fechas Civiles, Históricas y Laborales</p>
+        </header>
+        
+        <div class="mes-card">
+            <h2 class="mes-titulo">Enero</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">1 de enero (Jueves)</span>
+                    <span class="descripcion">Año Nuevo.</span>
+                </div>
+                <span class="badge nacional">Feriado Nacional</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">6 de enero (Martes)</span>
+                    <span class="descripcion">Día de Reyes.</span>
+                </div>
+                <span class="badge regular">Festividad</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">15 de enero (Jueves)</span>
+                    <span class="descripcion">Día del Compositor.</span>
+                </div>
+                <span class="badge regular">Conmemoración</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">21 de enero (Miércoles)</span>
+                    <span class="descripcion">Día Internacional del Mariachi.</span>
+                </div>
+                <span class="badge regular">Cultura</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Febrero</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">2 de febrero (Lunes)</span>
+                    <span class="descripcion">Día de la Candelaria / Conmemoración de la Constitución (Puente oficial).</span>
+                </div>
+                <span class="badge nacional">Feriado Nacional</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">5 de febrero (Jueves)</span>
+                    <span class="descripcion">Aniversario de la promulgación de la Constitución Mexicana (1917).</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">14 de febrero (Sábado)</span>
+                    <span class="descripcion">Día del Amor y la Amistad.</span>
+                </div>
+                <span class="badge regular">Festividad</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">16 y 17 de febrero (Lunes y Martes)</span>
+                    <span class="descripcion">Carnaval. Suspensión de labores en dependencias del Gobierno del Estado de Quintana Roo.</span>
+                </div>
+                <span class="badge estatal">Asueto Estatal</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">18 de febrero (Miércoles)</span>
+                    <span class="descripcion">Miércoles de Ceniza.</span>
+                </div>
+                <span class="badge regular">Tradición</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">24 de febrero (Martes)</span>
+                    <span class="descripcion">Día de la Bandera Nacional.</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Marzo</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">8 de marzo (Domingo)</span>
+                    <span class="descripcion">Día Internacional de la Mujer.</span>
+                </div>
+                <span class="badge regular">Conmemoración</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">16 de marzo (Lunes)</span>
+                    <span class="descripcion">Conmemoración del Natalicio de Benito Juárez (Puente oficial).</span>
+                </div>
+                <span class="badge nacional">Feriado Nacional</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">21 de marzo (Sábado)</span>
+                    <span class="descripcion">Natalicio de Benito Juárez (Fecha real) e Inicio de la Primavera.</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Abril</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">30 de marzo al 3 de abril</span>
+                    <span class="descripcion">Semana Santa. Periodo de asueto institucional tradicional para dependencias de Quintana Roo.</span>
+                </div>
+                <span class="badge estatal">Asueto Estatal</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">30 de abril (Jueves)</span>
+                    <span class="descripcion">Día de la Niñez (Día del Niño).</span>
+                </div>
+                <span class="badge regular">Celebración</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Mayo</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">1 de mayo (Viernes)</span>
+                    <span class="descripcion">Día del Trabajo.</span>
+                </div>
+                <span class="badge nacional">Feriado Nacional</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">5 de mayo (Martes)</span>
+                    <span class="descripcion">Aniversario de la Batalla de Puebla.</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">10 de mayo (Domingo)</span>
+                    <span class="descripcion">Día de las Madres. Concesión de día libre a madres trabajadoras del estado en día hábil cercano.</span>
+                </div>
+                <span class="badge estatal">Asueto Parcial</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">15 de mayo (Viernes)</span>
+                    <span class="descripcion">Día del Maestro.</span>
+                </div>
+                <span class="badge regular">Celebración</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Junio</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">1 de junio (Lunes)</span>
+                    <span class="descripcion">Día de la Marina Nacional.</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">11 de junio (Jueves)</span>
+                    <span class="descripcion">Inauguración de la Copa Mundial de la FIFA 2026 (Sede Estadio Azteca).</span>
+                </div>
+                <span class="badge regular">Evento Especial</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">21 de junio (Domingo)</span>
+                    <span class="descripcion">Día del Padre e Inicio del Verano.</span>
+                </div>
+                <span class="badge regular">Celebración</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Julio</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">1 de julio (Miércoles)</span>
+                    <span class="descripcion">Día del Ingeniero.</span>
+                </div>
+                <span class="badge regular">Gremial</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">3 de julio (Viernes)</span>
+                    <span class="descripcion">Aniversario del voto de la mujer en México (1955).</span>
+                </div>
+                <span class="badge regular">Histórico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">19 de julio (Domingo)</span>
+                    <span class="descripcion">Clausura de la Copa Mundial de la FIFA 2026.</span>
+                </div>
+                <span class="badge regular">Evento Especial</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">30 de julio (Jueves)</span>
+                    <span class="descripcion">Aniversario del Inicio de la Guerra de Castas. Identidad cultural de Quintana Roo.</span>
+                </div>
+                <span class="badge estatal">Identidad Local</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Agosto</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">8 de agosto (Sábado)</span>
+                    <span class="descripcion">Natalicio de Emiliano Zapata.</span>
+                </div>
+                <span class="badge regular">Histórico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">13 de agosto (Jueves)</span>
+                    <span class="descripcion">Aniversario de la Caída de Tenochtitlán.</span>
+                </div>
+                <span class="badge regular">Histórico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">28 de agosto (Viernes)</span>
+                    <span class="descripcion">Día Nacional de las Personas Mayores (Día del Abuelo).</span>
+                </div>
+                <span class="badge regular">Celebración</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Septiembre</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">Primera Quincena de Septiembre</span>
+                    <span class="descripcion">Informe de Gobierno del Estado. Acto oficial ante el Congreso en Chetumal.</span>
+                </div>
+                <span class="badge estatal">Evento Gubernamental</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">13 de septiembre (Domingo)</span>
+                    <span class="descripcion">Aniversario de la Gesta de los Niños Héroes de Chapultepec.</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">15 de septiembre (Martes)</span>
+                    <span class="descripcion">Conmemoración del Grito de Independencia de México.</span>
+                </div>
+                <span class="badge regular">Festividad Nacional</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">16 de septiembre (Miércoles)</span>
+                    <span class="descripcion">Aniversario del Inicio de la Independencia de México.</span>
+                </div>
+                <span class="badge nacional">Feriado Nacional</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Octubre</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">1 de octubre (Jueves)</span>
+                    <span class="descripcion">Día Nacional del Arquitecto.</span>
+                </div>
+                <span class="badge regular">Gremial</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">2 de octubre (Viernes)</span>
+                    <span class="descripcion">Conmemoración de los caídos en Tlatelolco (1968).</span>
+                </div>
+                <span class="badge regular">Solemne</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">8 de octubre (Jueves)</span>
+                    <span class="descripcion">Aniversario de la Creación del Estado Libre y Soberano de Quintana Roo. Descanso obligatorio burocracia local.</span>
+                </div>
+                <span class="badge estatal">Asueto Estatal</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">10 de octubre (Sábado)</span>
+                    <span class="descripcion">Día del Trabajador del Estado (Suele adecuarse al día hábil más cercano).</span>
+                </div>
+                <span class="badge estatal">Asueto Burocrático</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">12 de octubre (Lunes)</span>
+                    <span class="descripcion">Día de la Nación Pluricultural (Día de la Raza).</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Noviembre</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">1 y 2 de noviembre (Dom. y Lun.)</span>
+                    <span class="descripcion">Días de Muertos / Hanal Pixán. Suspensión de labores institucionales tradicionales.</span>
+                </div>
+                <span class="badge estatal">Asueto Estatal</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">16 de noviembre (Lunes)</span>
+                    <span class="descripcion">Conmemoración del Inicio de la Revolución Mexicana (Puente oficial).</span>
+                </div>
+                <span class="badge nacional">Feriado Nacional</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">20 de noviembre (Viernes)</span>
+                    <span class="descripcion">Aniversario del Inicio de la Revolución Mexicana (1910).</span>
+                </div>
+                <span class="badge regular">Día Cívico</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">24 de noviembre (Martes)</span>
+                    <span class="descripcion">Aniversario de la Creación del Territorio Federal de Quintana Roo (1902).</span>
+                </div>
+                <span class="badge regular">Histórico Local</span>
+            </div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Diciembre</h2>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">12 de diciembre (Sábado)</span>
+                    <span class="descripcion">Día de la Virgen de Guadalupe.</span>
+                </div>
+                <span class="badge regular">Tradición</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">16 de diciembre (Miércoles)</span>
+                    <span class="descripcion">Inicio de las Posadas Navideñas.</span>
+                </div>
+                <span class="badge regular">Tradición</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">24 de diciembre (Jueves)</span>
+                    <span class="descripcion">Nochebuena.</span>
+                </div>
+                <span class="badge regular">Festividad</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">25 de diciembre (Viernes)</span>
+                    <span class="descripcion">Navidad.</span>
+                </div>
+                <span class="badge nacional">Feriado Nacional</span>
+            </div>
+            <div class="item-efemeride">
+                <div class="info-evento">
+                    <span class="dia-texto">31 de diciembre (Jueves)</span>
+                    <span class="descripcion">Fin de Año (Nochevieja).</span>
+                </div>
+                <span class="badge regular">Festividad</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

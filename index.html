@@ -17,7 +17,7 @@
         }
         .container { 
             width: 100%;
-            max-width: 800px; 
+            max-width: 850px; 
             margin: 0 auto; 
         }
         header {
@@ -41,7 +41,7 @@
             border: 1px solid #e2e8f0;
         }
         .mes-titulo { 
-            font-size: 1.4rem; 
+            font-size: 1.5rem; 
             color: #0f172a; 
             margin-top: 0; 
             margin-bottom: 18px;
@@ -53,28 +53,35 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 12px 0;
-            border-bottom: 1px solid #f1f5f9;
-            gap: 16px;
+            padding: 18px 0;
+            border-bottom: 1px solid #e2e8f0;
+            gap: 20px;
         }
-        .item-efemeride:last-child { border-bottom: none; }
+        .item-efemeride:last-child { border-bottom: none; padding-bottom: 0; }
         
+        /* Nuevo formato: Día > Titular > Descripción */
         .info-evento { display: flex; flex-direction: column; gap: 4px; flex-grow: 1; }
-        .dia-texto { font-weight: 600; color: #1e293b; font-size: 0.95rem; }
-        .descripcion { color: #475569; font-size: 0.9rem; line-height: 1.45; }
+        .dia-texto { font-weight: 700; color: #ef4444; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .titulo-evento { font-weight: 700; color: #0f172a; font-size: 1.15rem; line-height: 1.25; margin-bottom: 4px; }
+        .descripcion { color: #475569; font-size: 0.95rem; line-height: 1.5; text-align: justify; }
         
         .seccion-diaria {
             background-color: #f8fafc;
             border-left: 4px solid #3b82f6;
-            padding: 10px 14px;
-            margin: 8px 0;
+            padding: 16px;
+            margin: 12px 0;
             border-radius: 0 8px 8px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
+        .seccion-diaria p.descripcion { margin: 4px 0 0 0; }
 
+        .badge-container { display: flex; align-items: flex-start; padding-top: 5px; }
         .badge {
-            font-size: 0.68rem;
+            font-size: 0.7rem;
             font-weight: 700;
-            padding: 4px 8px;
+            padding: 5px 10px;
             border-radius: 6px;
             text-transform: uppercase;
             white-space: nowrap;
@@ -95,808 +102,321 @@
             <p>Registro Civil, Histórico, Institucional y de Perspectiva de Género</p>
         </header>
         
-        <!-- ENERO -->
         <div class="mes-card">
             <h2 class="mes-titulo">Enero</h2>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">1 de enero</span>
-                    <span class="descripcion">Año Nuevo (Nacional / Internacional). En un día como hoy, pero del año 1981, el gobernador Pedro Joaquín Coldwell obtuvo el apoyo de los cozumeleños para convertir la Laguna de Chankanaab en acuario natural.</span>
+                    <span class="titulo-evento">Año Nuevo / Proyecto Acuario Chankanaab</span>
+                    <span class="descripcion">Día festivo (Nacional / Internacional). Además, en un día como hoy, pero del año 1981, el gobernador Pedro Joaquín Coldwell obtuvo el apoyo de los cozumeleños para convertir la Laguna de Chankanaab en acuario natural.</span>
                 </div>
-                <span class="badge nacional">Feriado / Estatal</span>
+                <div class="badge-container"><span class="badge nacional">Feriado / Estatal</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">6 de enero</span>
-                    <span class="descripcion">Día de Reyes (Nacional).</span>
+                    <span class="titulo-evento">Día de Reyes</span>
+                    <span class="descripcion">Celebración de carácter nacional.</span>
                 </div>
-                <span class="badge regular">Nacional</span>
+                <div class="badge-container"><span class="badge regular">Nacional</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">13 de enero</span>
-                    <span class="descripcion">Día Mundial de la Lucha contra la Depresión. Fecha establecida por la Organización Mundial de la Salud (OMS) para visibilizar y crear conciencia sobre este trastorno.</span>
+                    <span class="titulo-evento">Día Mundial de la Lucha contra la Depresión</span>
+                    <span class="descripcion">Fecha establecida por la Organización Mundial de la Salud (OMS) para visibilizar y crear conciencia sobre este trastorno que afecta a millones de personas a nivel global.</span>
                 </div>
-                <span class="badge regular">Salud Colectiva</span>
+                <div class="badge-container"><span class="badge regular">Salud Colectiva</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">15 de enero</span>
-                    <span class="descripcion">Día del Compositor (Nacional).</span>
+                    <span class="titulo-evento">Día del Compositor</span>
+                    <span class="descripcion">Conmemoración a nivel nacional.</span>
                 </div>
-                <span class="badge cultura">Cultura</span>
+                <div class="badge-container"><span class="badge cultura">Cultura</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">16 de enero</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de Hidalgo (1869) y de Baja California (1952).</span>
+                    <span class="titulo-evento">Aniversario de la Erección de Hidalgo y Baja California</span>
+                    <span class="descripcion">Conmemoración de la creación del Estado de Hidalgo (1869) y de Baja California (1952).</span>
                 </div>
-                <span class="badge regular">Efeméride Civil</span>
+                <div class="badge-container"><span class="badge regular">Efeméride Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
-                    <span class="dia-texto">20 de enero (1986)</span>
-                    <span class="descripcion">El Periódico Oficial publicó el Decreto de Creación de la Reserva de la Biosfera de Sian Ka'an.</span>
+                    <span class="dia-texto">20 de enero</span>
+                    <span class="titulo-evento">Creación de la Reserva de la Biosfera de Sian Ka'an</span>
+                    <span class="descripcion">En un día como hoy, pero del año 1986, el Periódico Oficial publicó el Decreto de Creación de esta importante zona protegida.</span>
                 </div>
-                <span class="badge estatal">Ecológico Local</span>
+                <div class="badge-container"><span class="badge estatal">Ecológico Local</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">21 de enero</span>
-                    <span class="descripcion">Día Internacional del Mariachi (Internacional).</span>
+                    <span class="titulo-evento">Día Internacional del Mariachi</span>
+                    <span class="descripcion">Celebración de carácter internacional que rinde tributo a este símbolo de la cultura mexicana.</span>
                 </div>
-                <span class="badge cultura">Cultura</span>
+                <div class="badge-container"><span class="badge cultura">Cultura</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">25 de enero</span>
-                    <span class="descripcion">Día Naranja (Internacional - Concienciación y prevención de la violencia contra las mujeres y niñas) // 1904: Se dio a conocer la Nueva Ley para la Organización Política y Municipal del Territorio de Quintana Roo.</span>
+                    <span class="titulo-evento">Día Naranja / Nueva Ley del Territorio de Quintana Roo</span>
+                    <span class="descripcion">Conmemoración internacional para la concienciación y prevención de la violencia contra las mujeres y niñas. En el ámbito estatal, en un día como hoy del año 1904, se dio a conocer la Nueva Ley para la Organización Política y Municipal del Territorio de Quintana Roo.</span>
                 </div>
-                <span class="badge genero">Género / Estatal</span>
+                <div class="badge-container"><span class="badge genero">Género / Estatal</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">26 de enero</span>
-                    <span class="descripcion">Día Mundial de la Educación Ambiental (Sensibilización para el desarrollo sostenible) // Aniversario de la Erección del Estado de Nayarit (1917).</span>
+                    <span class="titulo-evento">Día Mundial de la Educación Ambiental / Erección de Nayarit</span>
+                    <span class="descripcion">Esta fecha busca sensibilizar a la población mundial sobre la importancia de proteger el medio ambiente, reconocer los problemas ecológicos y fomentar una participación activa para lograr el desarrollo sostenible. También se conmemora la creación del Estado de Nayarit (1917).</span>
                 </div>
-                <span class="badge regular">Ambiente / Civil</span>
+                <div class="badge-container"><span class="badge regular">Ambiente / Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
-                    <span class="dia-texto">27 de enero (1734)</span>
-                    <span class="descripcion">El Virrey de Casa Fuerte informó al Rey de España Felipe V de la necesidad de construir un fuerte en las orillas de la Laguna de Bacalar para hacer frente a los ingleses de Wallix.</span>
+                    <span class="dia-texto">27 de enero</span>
+                    <span class="titulo-evento">Proyecto del Fuerte de San Felipe en Bacalar</span>
+                    <span class="descripcion">En un día como hoy, pero del año 1734, el Virrey de Casa Fuerte informó al Rey de España Felipe V de la necesidad de construir un fuerte en las orillas de la Laguna de Bacalar, para hacer frente a los ingleses de Wallix por los constantes ataques de los que era objeto esta Villa.</span>
                 </div>
-                <span class="badge estatal">Histórico Local</span>
+                <div class="badge-container"><span class="badge estatal">Histórico Local</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">30 de enero</span>
-                    <span class="descripcion">Día Escolar de la No Violencia y la Paz // 1984: En la biblioteca "Javier Rojo Gómez" de Chetumal se presentó el libro de texto de la SEP "Quintana Roo, entre la selva y el mar", de Lorena Careaga y coautores.</span>
+                    <span class="titulo-evento">Día Escolar de la No Violencia y la Paz</span>
+                    <span class="descripcion">Además, en un día como hoy del año 1984, en la biblioteca "Javier Rojo Gómez" de Chetumal se presentó el libro de texto de la SEP "Quintana Roo, entre la selva y el mar", de Lorena Careaga y otros autores.</span>
                 </div>
-                <span class="badge cultura">Educación / Paz</span>
+                <div class="badge-container"><span class="badge cultura">Educación / Paz</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">31 de enero</span>
-                    <span class="descripcion">Firma del Acta Constitutiva de la Federación (1824) - Origen formal de los estados fundadores // 1983: Arriba a la Isla de Cozumel el presidente Miguel de la Madrid Hurtado en su primera visita a Q. Roo para inaugurar el XIII Congreso Nacional del SNTE.</span>
+                    <span class="titulo-evento">Acta Constitutiva de la Federación / Visita de Miguel de la Madrid a Q. Roo</span>
+                    <span class="descripcion">Firma del Acta Constitutiva de la Federación (1824), origen formal de los estados fundadores. Además, en 1983, arribó a la Isla de Cozumel el presidente de la República Miguel de la Madrid Hurtado en su primera visita a Quintana Roo para inaugurar el XIII Congreso Nacional del SNTE.</span>
                 </div>
-                <span class="badge regular">Histórico</span>
+                <div class="badge-container"><span class="badge regular">Histórico</span></div>
             </div>
         </div>
 
-        <!-- FEBRERO -->
         <div class="mes-card">
             <h2 class="mes-titulo">Febrero</h2>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">2 de febrero</span>
-                    <span class="descripcion">Día de la Candelaria // Aniversario de la Creación del Municipio de Bacalar (2011) // Constitución del Estado de la Federación (Obligatorio Nacional por puente).</span>
+                    <span class="titulo-evento">Día de la Candelaria / Creación del Municipio de Bacalar</span>
+                    <span class="descripcion">Se conmemora la Constitución del Estado de la Federación (Obligatorio Nacional por puente). En el estado, se celebra el aniversario de la Creación del Municipio de Bacalar, fundado en 2011.</span>
                 </div>
-                <span class="badge nacional">Feriado / Local</span>
+                <div class="badge-container"><span class="badge nacional">Feriado / Local</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">4 de febrero</span>
-                    <span class="descripcion">Día Mundial contra el Cáncer // Día Internacional de la Fraternidad Humana (Proclamado por la ONU en 2020 para el diálogo, cooperación y respeto mutuo).</span>
+                    <span class="titulo-evento">Día Mundial contra el Cáncer / Día Internacional de la Fraternidad Humana</span>
+                    <span class="descripcion">La fecha de la Fraternidad Humana fue proclamada por las Naciones Unidas en 2020, inspirada en la firma del Documento sobre la Fraternidad Humana en 2019. Este texto histórico promovió el diálogo, la cooperación y el respeto entre pueblos y creencias, sentando las bases para una convivencia basada en la dignidad humana.</span>
                 </div>
-                <span class="badge regular">Salud / Social</span>
+                <div class="badge-container"><span class="badge regular">Salud / Social</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">5 de febrero</span>
-                    <span class="descripcion">Aniversario de la Promulgación de la Constitución Mexicana (1917) // Aniversario de la Erección del Estado de Aguascalientes (1857).</span>
+                    <span class="titulo-evento">Promulgación de la Constitución Mexicana (1917)</span>
+                    <span class="descripcion">Aniversario de la Carta Magna. También se conmemora la Erección del Estado de Aguascalientes (1857).</span>
                 </div>
-                <span class="badge regular">Histórico</span>
+                <div class="badge-container"><span class="badge regular">Histórico</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">11 de febrero</span>
-                    <span class="descripcion">Día Internacional de la Mujer y la Niña en la Ciencia (ONU 2015 - Acceso pleno y equitativo en campos STEM) // Día Mundial de la Mujer Médica.</span>
+                    <span class="titulo-evento">Día Internacional de la Mujer y la Niña en la Ciencia / Día de la Mujer Médica</span>
+                    <span class="descripcion">Establecido por la Asamblea General de las Naciones Unidas en 2015 para promover el acceso y la participación plena y equitativa de las mujeres en los campos de ciencia, tecnología, ingeniería y matemáticas.</span>
                 </div>
-                <span class="badge genero">Género / Ciencia</span>
+                <div class="badge-container"><span class="badge genero">Género / Ciencia</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">14 de febrero</span>
-                    <span class="descripcion">Día del Amor y la Amistad.</span>
+                    <span class="titulo-evento">Día del Amor y la Amistad</span>
+                    <span class="descripcion">Celebración de carácter internacional.</span>
                 </div>
-                <span class="badge regular">Festividad</span>
+                <div class="badge-container"><span class="badge regular">Festividad</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">15 de febrero</span>
-                    <span class="descripcion">Día Internacional del Cáncer Infantil.</span>
+                    <span class="titulo-evento">Día Internacional del Cáncer Infantil</span>
+                    <span class="descripcion">Jornada dedicada a crear conciencia sobre esta enfermedad y expresar apoyo a los menores que la padecen.</span>
                 </div>
-                <span class="badge regular">Salud Infantil</span>
+                <div class="badge-container"><span class="badge regular">Salud Infantil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">16 y 17 de febrero</span>
-                    <span class="descripcion">Carnaval (Asueto tradicional en Q. Roo - Fuerte impacto en Chetumal y Cozumel) // 17 de Feb: Festejo cívico del Municipio de Bacalar.</span>
+                    <span class="titulo-evento">Carnaval de Quintana Roo</span>
+                    <span class="descripcion">Asueto tradicional en Quintana Roo con fuerte impacto en las ciudades de Chetumal y Cozumel. El 17 de febrero también se realiza el festejo cívico del Municipio de Bacalar.</span>
                 </div>
-                <span class="badge estatal">Asueto Estatal</span>
+                <div class="badge-container"><span class="badge estatal">Asueto Estatal</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">18 de febrero</span>
-                    <span class="descripcion">Miércoles de Ceniza.</span>
+                    <span class="titulo-evento">Miércoles de Ceniza</span>
+                    <span class="descripcion">Día de tradición religiosa.</span>
                 </div>
-                <span class="badge regular">Tradición</span>
+                <div class="badge-container"><span class="badge regular">Tradición</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">20 de febrero</span>
-                    <span class="descripcion">Día Mundial de la Justicia Social (Necesidad real para garantizar bienestar, dignidad y derechos de todas las personas).</span>
+                    <span class="titulo-evento">Día Mundial de la Justicia Social</span>
+                    <span class="descripcion">Busca recordarnos que una sociedad más justa no es solo un ideal, sino una necesidad real para garantizar el bienestar, la dignidad y los derechos de todas las personas.</span>
                 </div>
-                <span class="badge regular">Derechos</span>
+                <div class="badge-container"><span class="badge regular">Derechos</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">23 de febrero</span>
-                    <span class="descripcion">Día Mundial de la Paz y la Comprensión (Dedicado a promover el diálogo, la tolerancia y el entendimiento mutuo).</span>
+                    <span class="titulo-evento">Día Mundial de la Paz y la Comprensión</span>
+                    <span class="descripcion">Día dedicado a promover el diálogo, la tolerancia y el entendimiento entre personas, culturas y pueblos de todo el mundo.</span>
                 </div>
-                <span class="badge regular">Paz</span>
+                <div class="badge-container"><span class="badge regular">Paz</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">24 de febrero</span>
-                    <span class="descripcion">Día de la Bandera Nacional (Nacional).</span>
+                    <span class="titulo-evento">Día de la Bandera Nacional</span>
+                    <span class="descripcion">Conmemoración oficial de uno de los símbolos patrios más importantes de México.</span>
                 </div>
-                <span class="badge regular">Día Cívico</span>
+                <div class="badge-container"><span class="badge regular">Día Cívico</span></div>
             </div>
         </div>
 
-        <!-- MARZO -->
         <div class="mes-card">
             <h2 class="mes-titulo">Marzo</h2>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">1 de marzo</span>
-                    <span class="descripcion">Día de la Familia (Impulsada desde 2005 para fomentar la integración y reconocer este núcleo social).</span>
+                    <span class="titulo-evento">Día de la Familia</span>
+                    <span class="descripcion">Fecha impulsada desde 2005 para fomentar la integración, la unión familiar y reconocer la importancia de este núcleo en la sociedad.</span>
                 </div>
-                <span class="badge regular">Social</span>
+                <div class="badge-container"><span class="badge regular">Social</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">2 de marzo</span>
-                    <span class="descripcion">Aniversario de la Erección Jurídica del Estado de México (1824).</span>
+                    <span class="titulo-evento">Erección Jurídica del Estado de México (1824)</span>
+                    <span class="descripcion">Aniversario cívico e histórico de la conformación de la entidad.</span>
                 </div>
-                <span class="badge regular">Efeméride Civil</span>
+                <div class="badge-container"><span class="badge regular">Efeméride Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">8 de marzo</span>
-                    <span class="descripcion">Día Internacional de la Mujer (8M) (Internacional - Lucha por la equidad, justicia e igualdad de derechos).</span>
+                    <span class="titulo-evento">Día Internacional de la Mujer (8M)</span>
+                    <span class="descripcion">Jornada internacional de lucha por la equidad, justicia e igualdad de derechos.</span>
                 </div>
-                <span class="badge genero">Género</span>
+                <div class="badge-container"><span class="badge genero">Género</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">16 de marzo</span>
-                    <span class="descripcion">Conmemoración del Natalicio de Benito Juárez (Obligatorio Nacional por puente).</span>
+                    <span class="titulo-evento">Conmemoración del Natalicio de Benito Juárez</span>
+                    <span class="descripcion">Día de descanso obligatorio a nivel nacional (por puente oficial).</span>
                 </div>
-                <span class="badge nacional">Feriado Nacional</span>
+                <div class="badge-container"><span class="badge nacional">Feriado Nacional</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">18 de marzo</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de Puebla (1824).</span>
+                    <span class="titulo-evento">Erección del Estado de Puebla (1824)</span>
+                    <span class="descripcion">Aniversario histórico de la creación del estado.</span>
                 </div>
-                <span class="badge regular">Efeméride Civil</span>
+                <div class="badge-container"><span class="badge regular">Efeméride Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">21 de marzo</span>
-                    <span class="descripcion">Natalicio de Benito Juárez (Fecha real) e Inicio de la Primavera.</span>
+                    <span class="titulo-evento">Natalicio de Benito Juárez e Inicio de la Primavera</span>
+                    <span class="descripcion">Fecha real del nacimiento del Benemérito de las Américas.</span>
                 </div>
-                <span class="badge regular">Día Cívico</span>
+                <div class="badge-container"><span class="badge regular">Día Cívico</span></div>
             </div>
         </div>
 
-        <!-- ABRIL -->
         <div class="mes-card">
             <h2 class="mes-titulo">Abril</h2>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">30 de marzo al 3 de abril</span>
-                    <span class="descripcion">Semana Santa (Asueto del Gobierno de Quintana Roo).</span>
+                    <span class="titulo-evento">Semana Santa</span>
+                    <span class="descripcion">Periodo de asueto institucional y tradicional otorgado por el Gobierno de Quintana Roo.</span>
                 </div>
-                <span class="badge estatal">Asueto Estatal</span>
+                <div class="badge-container"><span class="badge estatal">Asueto Estatal</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">6 de abril</span>
-                    <span class="descripcion">Día Mundial de la Actividad Física (Impulsado por la OMS desde 2002 para combatir el sedentarismo).</span>
+                    <span class="titulo-evento">Día Mundial de la Actividad Física</span>
+                    <span class="descripcion">Impulsada por la Organización Mundial de la Salud para recordar que el cuerpo humano está hecho para moverse. La OMS estableció esta celebración en 2002 a partir de una iniciativa brasileña llamada Agita São Paulo, un programa de salud pública que movilizó a millones de personas con el objetivo de combatir el sedentarismo.</span>
                 </div>
-                <span class="badge regular">Salud</span>
+                <div class="badge-container"><span class="badge regular">Salud</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">7 de abril</span>
-                    <span class="descripcion">Día Mundial de la Salud (Para recordar la fundación de la OMS en el año 1948 y discutir retos sociales).</span>
+                    <span class="titulo-evento">Día Mundial de la Salud</span>
+                    <span class="descripcion">Conmemoración creada para recordar la fundación de la Organización Mundial de la Salud en el año 1948. Es un espacio de discusión social sobre los logros y desafíos que ha tenido la población en la evolución y desarrollo de la salud en el mundo.</span>
                 </div>
-                <span class="badge regular">Salud</span>
+                <div class="badge-container"><span class="badge regular">Salud</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">17 de abril</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de Morelos (1869).</span>
+                    <span class="titulo-evento">Erección del Estado de Morelos (1869)</span>
+                    <span class="descripcion">Conmemoración del aniversario de creación de la entidad.</span>
                 </div>
-                <span class="badge regular">Efeméride Civil</span>
+                <div class="badge-container"><span class="badge regular">Efeméride Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">26 de abril</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de San Luis Potosí (1824).</span>
+                    <span class="titulo-evento">Erección del Estado de San Luis Potosí (1824)</span>
+                    <span class="descripcion">Aniversario histórico del estado.</span>
                 </div>
-                <span class="badge regular">Efeméride Civil</span>
+                <div class="badge-container"><span class="badge regular">Efeméride Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">28 de abril</span>
-                    <span class="descripcion">Día Mundial de la Seguridad y la Salud en el Trabajo (OIT - Visibilidad al riesgo laboral) // Aniversario de la Erección del Estado de Veracruz (1824).</span>
+                    <span class="titulo-evento">Día Mundial de la Seguridad y la Salud en el Trabajo / Erección de Veracruz (1824)</span>
+                    <span class="descripcion">Impulsado desde 2003 por la Organización Internacional del Trabajo (OIT). Su objetivo es dar visibilidad al riesgo que asumen millones de personas simplemente al ir a trabajar.</span>
                 </div>
-                <span class="badge regular">Laboral / Civil</span>
+                <div class="badge-container"><span class="badge regular">Laboral / Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">29 de abril</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de Campeche (1863).</span>
+                    <span class="titulo-evento">Erección del Estado de Campeche (1863)</span>
+                    <span class="descripcion">Aniversario de la constitución de la entidad federativa.</span>
                 </div>
-                <span class="badge regular">Efeméride Civil</span>
+                <div class="badge-container"><span class="badge regular">Efeméride Civil</span></div>
             </div>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">30 de abril</span>
-                    <span class="descripcion">Día de la Niñez (Día del Niño en México).</span>
+                    <span class="titulo-evento">Día de la Niñez</span>
+                    <span class="descripcion">Celebración nacional también conocida como el Día del Niño en México.</span>
                 </div>
-                <span class="badge regular">Celebración</span>
+                <div class="badge-container"><span class="badge regular">Celebración</span></div>
             </div>
         </div>
 
-        <!-- MAYO -->
         <div class="mes-card">
             <h2 class="mes-titulo">Mayo</h2>
             <div class="item-efemeride">
                 <div class="info-evento">
                     <span class="dia-texto">1 de mayo</span>
-                    <span class="descripcion">Día del Trabajo (Obligatorio Nacional - Honra los derechos laborales y la lucha obrera).</span>
-                </div>
-                <span class="badge nacional">Feriado Nacional</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">5 de mayo</span>
-                    <span class="descripcion">Aniversario de la Batalla de Puebla // 1898: Se funda oficialmente Payo Obispo (hoy Chetumal) por el vicealmirante Othón Pompeyo Blanco para consolidar la soberanía nacional.</span>
-                </div>
-                <span class="badge estatal">Cívico / Chetumal</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">6 de mayo (2026)</span>
-                    <span class="descripcion">Día Mundial de la Salud Mental Materna (Primer miércoles de mayo) - Sensibilizar sobre trastornos durante el embarazo y primer año postparto.</span>
-                </div>
-                <span class="badge genero">Género / Salud</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">7 de mayo</span>
-                    <span class="descripcion">Aniversario de la Erección de los Estados de Nuevo León, Coahuila, Tamaulipas y Tabasco (1824).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">10 de mayo</span>
-                    <span class="descripcion">Día de las Madres (Nacional / Asueto concedido a madres trabajadoras en Quintana Roo).</span>
-                </div>
-                <span class="badge estatal">Asueto Parcial</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">12 de mayo</span>
-                    <span class="descripcion">Día Internacional de las Mujeres en Matemáticas (Proclamada en 2018 para honrar el nacimiento de Maryam Mirzakhani, primera mujer Medalla Fields).</span>
-                </div>
-                <span class="badge genero">Género / Ciencia</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">15 de mayo</span>
-                    <span class="descripcion">Día del Maestro.</span>
-                </div>
-                <span class="badge regular">Celebración</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">22 de mayo</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de Durango (1824).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">24 de mayo</span>
-                    <span class="descripcion">Día Internacional de las Mujeres por la Paz y el Desarme (Internacional).</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">28 de mayo</span>
-                    <span class="descripcion">Día Internacional de Acción por la Salud de la Mujer (Internacional).</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">29 de mayo</span>
-                    <span class="descripcion">Aniversario de la Creación del Municipio de Tulum (2008) (Local) // Tulum como Pueblo Mágico (Nombramiento original en 2015).</span>
-                </div>
-                <span class="badge estatal">Local</span>
-            </div>
-        </div>
-
-        <!-- JUNIO -->
-        <div class="mes-card">
-            <h2 class="mes-titulo">Junio</h2>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">1 de junio</span>
-                    <span class="descripcion">Día de la Marina Nacional.</span>
-                </div>
-                <span class="badge regular">Día Cívico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">6 de junio (1990)</span>
-                    <span class="descripcion">Creación de la CNDH: Se funda la Comisión Nacional de los Derechos Humanos, transformando la defensa institucional de las garantías fundamentales.</span>
-                </div>
-                <span class="badge regular">Derechos Humanos</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">7 de junio</span>
-                    <span class="descripcion">Día de la Libertad de Expresión en México (Instituido en 1951 por el presidente Miguel Alemán Valdés para reconocer la prensa libre).</span>
-                </div>
-                <span class="badge regular">Prensa Libre</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">10 de junio (1937)</span>
-                    <span class="descripcion">Cambio oficial de nombre a Chetumal: El gobernador Gral. Rafael E. Melgar decretó el cambio de nombre de la ciudad de Payo Obispo a Chetumal (Chactemal).</span>
-                </div>
-                <span class="badge estatal">Identidad Chetumal</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">11 de junio</span>
-                    <span class="descripcion">Inauguración de la Copa Mundial de la FIFA 2026 (Sede en el Estadio Azteca).</span>
-                </div>
-                <span class="badge cultura">Evento Especial</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">16 de junio</span>
-                    <span class="descripcion">Aniversario de la Declaración del Estado Libre de Jalisco (1823).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">24 de junio</span>
-                    <span class="descripcion">Día Internacional de las Mujeres en la Diplomacia (ONU, Res. 76/269 de junio 2022) - Visibilizar y reconocer contribuciones.</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">21 de junio</span>
-                    <span class="descripcion">Día del Padre // Nombramiento de Cozumel como Pueblo Mágico (Aniversario de Junio 2023).</span>
-                </div>
-                <span class="badge estatal">Local</span>
-            </div>
-        </div>
-
-        <!-- JULIO 2026 (INTEGRADO DETALLADO) -->
-        <div class="mes-card">
-            <h2 class="mes-titulo">Julio 2026</h2>
-            
-            <div class="seccion-diaria">
-                <span class="dia-texto">1 de julio (Miércoles)</span>
-                <p class="descripcion">Día del Ingeniero (Nacional).</p>
-            </div>
-            
-            <div class="seccion-diaria">
-                <span class="dia-texto">3 de julio (Viernes)</span>
-                <p class="descripcion">Las mujeres votan por primera vez en elecciones federales en México (1955) para la XLIII Legislatura, logro histórico de derechos políticos <span class="badge genero">Género</span> // Natalicio de Franz Kafka (1883) // Natalicio de José Guadalupe Posada (1852).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">4 de julio (Sábado)</span>
-                <p class="descripcion">La sonda espacial Pathfinder aterriza en Marte (1997) <span class="badge cultura">Ciencia</span>.</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">5 de julio (Domingo)</span>
-                <p class="descripcion">Día del Terapeuta Físico o Fisioterapeuta (Nacional) // Aniversario luctuoso de Valentín Gómez Farías (1857).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">6 de julio (Lunes)</span>
-                <p class="descripcion">Natalicio de Frida Kahlo (1907) // Fin de la guerra México-Americana con la ratificación del Tratado de Guadalupe Hidalgo (1848) // Aniversario de la Erección del Estado de Chihuahua (1824).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">7 de julio (Martes)</span>
-                <p class="descripcion">Día Mundial de la Conservación del Suelo // Aniversario luctuoso de Sir Arthur Conan Doyle (1930).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">8 de julio (Miércoles)</span>
-                <p class="descripcion">El Tratado de Límites entre México y la Gran Bretaña: Se resolvió que el Río Hondo sería el límite definitivo entre Quintana Roo y Belice, frenando disputas y contrabando <span class="badge estatal">Historia Sur</span>.</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">11 de julio (Sábado)</span>
-                <p class="descripcion">Día Mundial de la Población // Natalicio de Luis de Góngora y Argote (1561).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">12 de julio (Domingo)</span>
-                <p class="descripcion">Día del Abogado (Nacional) // Por primera vez en la historia es avistada una nebulosa (Nebulosa Dumbbell, 1764) <span class="badge cultura">Ciencia</span>.</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">13 de julio (Lunes)</span>
-                <p class="descripcion">Día del Policía (Nacional) // Día Mundial del Rock // Aniversario luctuoso de la pintora Frida Kahlo (1954).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">14 de julio (Martes)</span>
-                <p class="descripcion">Día del Árbol en México (Se celebra tradicionalmente el segundo jueves de julio).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">15 de julio (Miércoles)</span>
-                <p class="descripcion">Día Mundial de las Habilidades de la Juventud.</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">18 de julio (Sábado)</span>
-                <p class="descripcion">Día Internacional de Nelson Mandela // Aniversario luctuoso de Benito Juárez (1872) // Aniversario luctuoso de Jaime Nunó (1908), compositor del Himno Nacional.</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">19 de julio (Domingo)</span>
-                <p class="descripcion">Clausura de la Copa Mundial de la FIFA 2026 // Aniversario del Inicio de la Guerra de Castas (1847) <span class="badge estatal">Identidad Q. Roo</span>.</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">20 de julio (Lunes)</span>
-                <p class="descripcion">Payo Obispo asume oficialmente como Capital: Se consolida la mudanza e instalación formal de los poderes civiles e institucionales desde Santa Cruz de Bravo hacia Chetumal <span class="badge estatal">Capitalidad</span> // Día del Bibliotecario // Aniversario luctuoso de Francisco "Pancho" Villa (1923).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">21 de julio (Martes)</span>
-                <p class="descripcion">Hazaña espacial: Neil Armstrong pisa la Luna (1969).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">22 de julio (Miércoles)</span>
-                <p class="descripcion">Día de la Secretaria (Se celebra en México el tercer miércoles de julio).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">25 de julio (Sábado)</span>
-                <p class="descripcion">Día Naranja: Conmemoración mensual por la Eliminación de la Violencia contra la Mujer <span class="badge genero">Género</span> // Aniversario luctuoso de José Mauro de Vasconcelos (1984).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">26 de julio (Domingo)</span>
-                <p class="descripcion">Día Internacional de Conservación del Ecosistema de Manglares (UNESCO) <span class="badge estatal">Ecológico</span> // Natalicio del poeta Antonio Machado (1875).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">28 de julio (Martes)</span>
-                <p class="descripcion">Aniversario de la Fundación del Municipio de Solidaridad, Quintana Roo (1993) <span class="badge estatal">Local</span> // Día Mundial contra la Hepatitis // Aniversario luctuoso del compositor Johann Sebastian Bach (1750).</p>
-            </div>
-
-            <div class="seccion-diaria">
-                <span class="dia-texto">30 de julio (Jueves)</span>
-                <p class="descripcion">Día Internacional de la Amistad (ONU para promover la paz) // Día Mundial contra la Trata de Personas // Aniversario luctuoso de Miguel Hidalgo y Costilla (1811) // Natalicio de Emily Brontë (1818).</p>
-            </div>
-        </div>
-
-        <!-- AGOSTO -->
-        <div class="mes-card">
-            <h2 class="mes-titulo">Agosto</h2>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">8 de agosto</span>
-                    <span class="descripcion">Natalicio de Emiliano Zapata.</span>
-                </div>
-                <span class="badge regular">Histórico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">13 de agosto</span>
-                    <span class="descripcion">Aniversario de la Caída de Tenochtitlán.</span>
-                </div>
-                <span class="badge regular">Histórico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">28 de agosto</span>
-                    <span class="descripcion">Día Nacional de las Personas Mayores (Día del Abuelo).</span>
-                </div>
-                <span class="badge regular">Celebración</span>
-            </div>
-        </div>
-
-        <!-- SEPTIEMBRE -->
-        <div class="mes-card">
-            <h2 class="mes-titulo">Septiembre</h2>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">Primera Quincena</span>
-                    <span class="descripcion">Informe de Gobierno del Estado de Quintana Roo (Sede Oficial en Chetumal).</span>
-                </div>
-                <span class="badge estatal">Institucional</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">5 de septiembre</span>
-                    <span class="descripcion">Día Internacional de la Mujer Indígena (Visibilización de las mujeres mayas y originarias).</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">12 de septiembre</span>
-                    <span class="descripcion">Aniversario de la Erección de los Estados de Sonora y Sinaloa (1824, como Estado de Occidente).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">13 de septiembre</span>
-                    <span class="descripcion">Gesta Heroica de los Niños Héroes de Chapultepec.</span>
-                </div>
-                <span class="badge regular">Día Cívico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">14 de septiembre</span>
-                    <span class="descripcion">Aniversario de la Incorporación de Chiapas al Pacto Federal (1824).</span>
-                </div>
-                <span class="badge regular">Histórico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">15 de septiembre</span>
-                    <span class="descripcion">Conmemoración del Grito de Independencia.</span>
-                </div>
-                <span class="badge regular">Festividad</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">16 de septiembre</span>
-                    <span class="descripcion">Aniversario del Inicio de la Independencia de México (Obligatorio Nacional).</span>
-                </div>
-                <span class="badge nacional">Feriado Nacional</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">23 de septiembre</span>
-                    <span class="descripcion">Día Internacional contra la Explotación Sexual y el Tráfico de Mujeres, Niñas y Niños.</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-        </div>
-
-        <!-- OCTUBRE -->
-        <div class="mes-card">
-            <h2 class="mes-titulo">Octubre</h2>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">1 de octubre</span>
-                    <span class="descripcion">Día Nacional del Arquitecto.</span>
-                </div>
-                <span class="badge regular">Gremial</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">2 de octubre</span>
-                    <span class="descripcion">Conmemoración de Tlatelolco (1968) // Aniversario del Nombramiento de Bacalar como Pueblo Mágico (2007).</span>
-                </div>
-                <span class="badge estatal">Local / Histórico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">8 de octubre</span>
-                    <span class="descripcion">Aniversario de la Creación del Estado Libre y Soberano de Quintana Roo (1974) y de Baja California Sur (1974). (Asueto estatal obligatorio en Q. Roo).</span>
-                </div>
-                <span class="badge estatal">Asueto Estatal</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">10 de octubre</span>
-                    <span class="descripcion">Día del Trabajador del Estado / Empleado Público (Asueto burocracia Q. Roo).</span>
-                </div>
-                <span class="badge estatal">Asueto Burocracia</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">11 de octubre</span>
-                    <span class="descripcion">Día Internacional de la Niña (Internacional).</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">12 de octubre</span>
-                    <span class="descripcion">Día de la Nación Pluricultural (Día de la Raza).</span>
-                </div>
-                <span class="badge regular">Día Cívico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">15 de octubre</span>
-                    <span class="descripcion">Día Internacional de las Mujeres Rurales.</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">17 de octubre</span>
-                    <span class="descripcion">Aniversario del Reconocimiento del Derecho al Voto de la Mujer en México (1953) (Nacional).</span>
-                </div>
-                <span class="badge genero">Género / Histórico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">19 de octubre</span>
-                    <span class="descripcion">Día Internacional de la Lucha contra el Cáncer de Mama (Internacional).</span>
-                </div>
-                <span class="badge genero">Salud / Género</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">27 de octubre</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de Guerrero (1849).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-        </div>
-
-        <!-- NOVIEMBRE -->
-        <div class="mes-card">
-            <h2 class="mes-titulo">Noviembre</h2>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">1 y 2 de noviembre</span>
-                    <span class="descripcion">Día de Todos los Santos y Día de Muertos / Hanal Pixán (Asueto tradicional Gobierno Q. Roo).</span>
-                </div>
-                <span class="badge estatal">Asueto Estatal</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">16 de noviembre</span>
-                    <span class="descripcion">Aniversario de la Revolución Mexicana (Obligatorio Nacional por puente).</span>
-                </div>
-                <span class="badge nacional">Feriado Nacional</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">18 de noviembre</span>
-                    <span class="descripcion">Creación del Distrito Federal / Ciudad de México (1824).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">20 de noviembre</span>
-                    <span class="descripcion">Aniversario del inicio de la Revolución Mexicana (1910).</span>
-                </div>
-                <span class="badge regular">Día Cívico</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">21 de noviembre</span>
-                    <span class="descripcion">Aniversario de la Fundación de San Miguel de Cozumel (1849).</span>
-                </div>
-                <span class="badge estatal">Local</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">24 de noviembre</span>
-                    <span class="descripcion">Aniversario de la Creación del Territorio Federal de Quintana Roo (1902) (Festejo cívico en Chetumal).</span>
-                </div>
-                <span class="badge estatal">Identidad Local</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">25 de noviembre</span>
-                    <span class="descripcion">Día Internacional de la Eliminación de la Violencia contra la Mujer.</span>
-                </div>
-                <span class="badge genero">Género</span>
-            </div>
-        </div>
-
-        <!-- DICIEMBRE -->
-        <div class="mes-card">
-            <h2 class="mes-titulo">Diciembre</h2>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">9 de diciembre</span>
-                    <span class="descripcion">Aniversario de la Erección de los Estados de Tlaxcala y Colima (1856).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">12 de diciembre</span>
-                    <span class="descripcion">Día de la Virgen de Guadalupe.</span>
-                </div>
-                <span class="badge regular">Tradición</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">20 de diciembre</span>
-                    <span class="descripcion">Aniversario de la Erección de los Estados de Guanajuato, Michoacán y Querétaro (1823).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">21 de diciembre</span>
-                    <span class="descripcion">Aniversario de la Erección del Estado de Oaxaca (1823).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">23 de diciembre</span>
-                    <span class="descripcion">Aniversario de la Erección de los Estados de Yucatán y Zacatecas (1823).</span>
-                </div>
-                <span class="badge regular">Efeméride Civil</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">25 de diciembre</span>
-                    <span class="descripcion">Navidad (Obligatorio Nacional).</span>
-                </div>
-                <span class="badge nacional">Feriado Nacional</span>
-            </div>
-            <div class="item-efemeride">
-                <div class="info-evento">
-                    <span class="dia-texto">31 de diciembre</span>
-                    <span class="descripcion">Fin de Año (Nochevieja).</span>
-                </div>
-                <span class="badge regular">Festividad</span>
-            </div>
-        </div>
-
-    </div>
-</body>
-</html>
+                    <span class="titulo-evento">D
